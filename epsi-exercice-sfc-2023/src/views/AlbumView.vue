@@ -5,10 +5,7 @@
       <BarreRecherche @search="performSearch" />
       <ul id="list-album">
         <li v-for="album in filteredAlbums" :key="album.id">
-            <h2 id="title-album">Albums de Daft Punk</h2>
-            <h3>{{ album.title }}</h3>
-            <img :src=album.cover alt="cover album">
-            <p>Nombres de musiques : {{ album.nb_tracks }}</p>
+          <AlbumCard :albumInfo = "album"></AlbumCard>
         </li>
       </ul>
     </div>
@@ -18,11 +15,12 @@
 <script>
 import axios from 'axios';
 import BarreRecherche from '@/components/BarreRecherche.vue';
+import AlbumCard from '@/components/AlbumCard.vue';
 
 const apiURL = 'https://api.deezer.com/search/album?q=artist:"Daft Punk"';
 
 export default {
-  components: { BarreRecherche },
+  components: { BarreRecherche, AlbumCard },
   data() {
     return {
       daftPunkAlbums: [],
@@ -93,10 +91,5 @@ export default {
 #list-album li p {
   margin-top: 0.5em;
   font-size: 0.9em;
-}
-@media screen and (max-width:500px){
-    #list-album li{
-    width: 100%;
-  }
 }
   </style>
