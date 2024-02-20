@@ -78,4 +78,9 @@
   margin-top: 0.5em;
   font-size: 0.9em;
 }
+@media screen and (max-width:500px){
+    #list-album li{
+    width: 100%;
+  }
+}
   </style>
