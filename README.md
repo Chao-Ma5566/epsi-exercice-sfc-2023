@@ -15,7 +15,7 @@ Une fan page de DaftPunk qui affiche tous les albums de DaftPunk, une barre de r
 
 # Répartition du travail
 
-Mattéo ROUZIOUX: Barre de recherche (terminée)
-Quentin COUET: Page album détail (terminée mais routes dynamiques non-fonctionnelle)
-Charly RICOUL: View liste d'album (terminée)
-Jianchao MA: Carte d'album (terminée)
+Mattéo ROUZIOUX: Barre de recherche (terminée).
+Quentin COUET: Page album détail (terminée mais routes dynamiques non-fonctionnelle).
+Charly RICOUL: View liste d'album (terminée).
+Jianchao MA: Carte d'album (terminée).
