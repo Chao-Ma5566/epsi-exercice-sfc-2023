@@ -3,7 +3,7 @@
     <div>
       <h1>Albums de Daft Punk</h1>
       <BarreRecherche @search="performSearch" />
-      <ul>
+      <ul id="list-album">
         <li v-for="album in filteredAlbums" :key="album.id">
           <AlbumCard :albumInfo = "album"></AlbumCard>
         </li>
