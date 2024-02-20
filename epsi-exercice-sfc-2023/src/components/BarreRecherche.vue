@@ -56,5 +56,5 @@ fetchAlbums();
 </script>
 
 <style scoped>
-/* Votre CSS existant ici */
+
 </style>
