@@ -1,12 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import BarreRecherche from "@/components/BarreRecherche.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <barre-recherche></barre-recherche>
       <RouterLink to="/albums-Daft-Punk">Albums</RouterLink>
     </div>
   </header>
