@@ -8,7 +8,6 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/albums-Daft-Punk">Albums</RouterLink>
     </div>
   </header>
-
   <RouterView />
 </template>
 
