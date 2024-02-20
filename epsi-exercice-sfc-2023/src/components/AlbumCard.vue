@@ -8,11 +8,6 @@
 
 <script>
 export default {
-    name: "AlbumCard",
-    props: {
-        albumInfo: {
-            required: true
-        }
-    }
+    props: ['albumInfo'],
 }
 </script>
