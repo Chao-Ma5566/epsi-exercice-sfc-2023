@@ -3,10 +3,12 @@
     <div>
       <h1>Albums de Daft Punk</h1>
       <BarreRecherche @search="performSearch" />
-      <ul>
+      <ul id="list-album">
         <li v-for="album in filteredAlbums" :key="album.id">
-          <h3>{{ album.title }}</h3>
-          <p>Artiste: {{ album.artist.name }}</p>
+            <h2 id="title-album">Albums de Daft Punk</h2>
+            <h3>{{ album.title }}</h3>
+            <img :src=album.cover alt="cover album">
+            <p>Nombres de musiques : {{ album.nb_tracks }}</p>
         </li>
       </ul>
     </div>
