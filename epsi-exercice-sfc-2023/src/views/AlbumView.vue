@@ -1,6 +1,15 @@
 <template>
     <main>
-    
+      <div>
+          <h2>Albums de Daft Punk</h2>
+          <ul>
+              <li v-for="album in daftPunkAlbums" :key="album.id">
+                  <h3>{{ album.title }}</h3>
+                  <p>Artiste: {{ album.artist.name }}</p>
+                  <!-- Ajoutez d'autres informations que vous souhaitez afficher -->
+              </li>
+          </ul>
+      </div>
     </main>
   </template>
   
