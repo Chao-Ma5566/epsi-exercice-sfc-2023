@@ -5,8 +5,8 @@
           <ul>
               <li v-for="album in daftPunkAlbums" :key="album.id">
                   <h3>{{ album.title }}</h3>
-                  <p>Artiste: {{ album.artist.name }}</p>
-                  <!-- Ajoutez d'autres informations que vous souhaitez afficher -->
+                  <img :src=album.cover alt="cover album">
+                  <p>Nombres musiques: {{ album.nb_tracks }}</p>
               </li>
           </ul>
       </div>
