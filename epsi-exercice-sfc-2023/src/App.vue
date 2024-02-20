@@ -9,6 +9,7 @@ import BarreRecherche from "@/components/BarreRecherche.vue";
 
     <div class="wrapper">
       <barre-recherche></barre-recherche>
+      <RouterLink to="/albums-Daft-Punk">Albums</RouterLink>
     </div>
   </header>
 
